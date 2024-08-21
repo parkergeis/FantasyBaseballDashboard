@@ -195,7 +195,7 @@ with pd.ExcelWriter('FantasyData.xlsx') as writer:
     TotalPrizes.to_excel(writer, sheet_name='TotalPrizes', index=False)
 
 # Export locally (for Streamlit)
-os.chdir('/Users/parkergeis/Personal/SportsStats/FantasyBaseballApp/data')
+os.chdir('/Users/parkergeis/Personal/Projects/FantasyBaseballApp/data')
 with pd.ExcelWriter('FantasyData.xlsx') as writer:  
     WeeklyData.to_excel(writer, sheet_name='WeeklyData', index=False)
     PreviousStandings.to_excel(writer, sheet_name='PreviousStandings', index=False)
